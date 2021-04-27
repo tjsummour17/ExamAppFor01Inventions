@@ -57,7 +57,7 @@ class VacationCard extends StatelessWidget {
               Expanded(child: SizedBox()),
               ElevatedButton(
                 child: Text(language.approveLeave),
-                onPressed: (employee.vacations + vacation.toDate.difference(vacation.fromDate).inDays) < 14 &&
+                onPressed: (employee.vacations + vacation.toDate.difference(vacation.fromDate).inDays) <= 14 &&
                     (vacation.isApproved == null || !vacation.isApproved!)
                     ? () {
                         employee.vacations += vacation.toDate.difference(vacation.fromDate).inDays;
