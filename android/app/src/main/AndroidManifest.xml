@@ -4,7 +4,7 @@
 
     <application
         android:icon="@mipmap/ic_launcher"
-        android:label="exam"
+        android:label="@string/app_name"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
         <activity
